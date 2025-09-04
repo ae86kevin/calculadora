@@ -35,7 +35,7 @@ etiqueta3= tk.Label(ventana, text="RESULTADO: ")
 etiqueta3.pack(padx= 7, pady=7)
 entrada3 = tk.Entry(ventana)
 entrada3.pack()
-
+print(entrada.get())
 
 
 
