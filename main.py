@@ -17,6 +17,24 @@ def division(a, b):
 
 
 
+def funcuines(seleccion ):
+    a=float(entrada.get())
+    b=float(entrada.get())
+
+    if seleccion == "suma":
+        resultado = suma(a, b)
+
+    elif seleccion == "resta":
+        resultado = resta(a, b)
+    elif seleccion == "multiplicacion":
+        resultado = multiplicacion(a, b)
+    elif seleccion == "division":
+        resultado = division(a, b)
+
+    entrada3.delete(0, tk.END)
+    entrada3.insert(0, resultado)
+
+
 ventana=tk.Tk()
 ventana.title("Calculadora")
 ventana.geometry("500x300")
@@ -36,6 +54,7 @@ etiqueta3.pack(padx= 7, pady=7)
 entrada3 = tk.Entry(ventana)
 entrada3.pack()
 print(entrada.get())
+
 
 
 
